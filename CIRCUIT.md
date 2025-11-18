@@ -1,20 +1,16 @@
-# MicroPython — Circuit Schematic
+# Mastering Micropython From Basics To Building Smart Devices — Circuit Notes
 
-- Course: Mastering MicroPython: From Basics to Building Smart Devices
-- Author: Ashraf S A AlMadhoun
-- Link: https://www.udemy.com/course/micropython-micro-python-introduction-to-programming-hardware-python/?couponCode=JULYMAXDICOUNT
+| Signal | Suggested Pin | Notes |
+| --- | --- | --- |
+| Sensor Input | A0 / GPIO | Adjust according to the Python / Data board you own. |
+| Actuator Output | D9 / PWM Pin | Use a transistor/driver for high-current loads. |
+| Status LED | D13 or onboard LED | Mirrors the runtime state for quick debugging. |
 
-## Connections
+## Wiring Checklist
 
-- ESP32/ESP8266 dev board; USB for flashing; sensors wired to GPIO.
+1. Power rails first (5V / 3.3V and GND).
+2. Route sensor outputs to the analog/digital pin noted above.
+3. Add current-limiting resistors where appropriate.
+4. Double-check common grounds between modules and the development board.
 
-## Diagram (ASCII)
-
-```
-Sensors -> GPIO -> ESP32
-USB -> Flash MicroPython
-```
-
-## Purchase With Discount
-
-Get a discounted price and build MicroPython projects — use the course link above.
+Refer to the course lecture for the exact schematic; reuse these notes as a quick reference.
